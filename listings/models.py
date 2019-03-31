@@ -38,7 +38,7 @@ class Bedrooms(models.Model):
 
 class Listing(models.Model):
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING, verbose_name='Риелтор')
-    title = models.CharField(max_length=50, unique=True, verbose_name='Улица')
+    title = models.CharField(max_length=50, verbose_name='Улица')
     # city = models.CharField(max_length=100)
     # city = models.ForeignKey(City, on_delete=models.CASCADE)
     # created_at = models.DateTimeField(default=datetime.now, verbose_name='Дата регистрации')
